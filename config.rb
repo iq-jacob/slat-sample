@@ -1,6 +1,8 @@
 # Unique header generation
 require './lib/unique_head.rb'
 
+activate :livereload
+
 # Markdown
 set :markdown_engine, :redcarpet
 set :markdown,
@@ -61,3 +63,4 @@ set :port, 4567
 helpers do
   require './lib/toc_data.rb'
 end
+
